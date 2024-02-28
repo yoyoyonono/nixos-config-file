@@ -90,6 +90,11 @@
     git
     discord
     gh
+    vscode
+    neovim
+    gitkraken
+    steam
+    stremio
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
