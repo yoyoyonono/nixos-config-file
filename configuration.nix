@@ -97,6 +97,7 @@
     stremio
     neofetch
     lshw
+    google-fonts
   ];
 
   programs.steam = {
