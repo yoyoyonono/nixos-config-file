@@ -89,7 +89,6 @@
     zoxide
     git
     discord
-    shutter
     gh
   ];
 
