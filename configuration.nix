@@ -95,6 +95,8 @@
     gitkraken
     steam
     stremio
+    neofetch
+    lshw
   ];
 
   programs.steam = {
