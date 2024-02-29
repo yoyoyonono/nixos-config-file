@@ -121,6 +121,7 @@
     zsh
     htop
     remmina 
+    pico-sdk
   ];
 
   fonts.packages = with pkgs; [
