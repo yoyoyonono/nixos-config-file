@@ -28,6 +28,7 @@
 
   # Set your time zone.
   time.timeZone = "Asia/Kathmandu";
+  time.hardwareClockInLocalTime = true;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
@@ -84,6 +85,7 @@
       firefox
     #  thunderbird
     ];
+    shell = pkgs.zsh;
   };
 
   # Allow unfree packages
@@ -109,6 +111,7 @@
     inxi
     openrgb-with-all-plugins
     zsh
+    zsh-powerlevel10k
   ];
 
   fonts.packages = with pkgs; [
@@ -120,6 +123,18 @@
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
+  };
+
+  programs.zsh = {
+    enable = true;
+    ohMyZsh = {
+      enable = true;
+      plugins = [
+        "git"
+      ];
+    };
+    promptInit = ''source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
+                   eval "$(zoxide init zsh)"'';
   };
 
   # Some programs need SUID wrappers, can be configured further or are
