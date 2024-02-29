@@ -121,7 +121,7 @@
     zsh
     htop
     remmina 
-    pico-sdk
+    wineWowPackages.waylandFull
   ];
 
   fonts.packages = with pkgs; [
