@@ -36,6 +36,12 @@
     # '')
     zsh
     zsh-powerlevel10k
+    discord
+    vscode
+    steam
+    stremio
+    gitkraken
+    remmina 
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

@@ -113,20 +113,13 @@
     lf
     zoxide
     git
-    discord
     gh
-    vscode
     neovim
-    gitkraken
-    steam
-    stremio
     neofetch
     lshw
     inxi
     openrgb-with-all-plugins
-    zsh
     htop
-    remmina 
     wineWowPackages.waylandFull
     alsa-scarlett-gui
   ];
