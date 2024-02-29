@@ -127,23 +127,7 @@
     nerdfonts
   ];
 
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-  };
 
-  programs.zsh = {
-    enable = true;
-    ohMyZsh = {
-      enable = true;
-      plugins = [
-        "git"
-      ];
-    };
-    promptInit = ''source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-                   eval "$(zoxide init zsh)"'';
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

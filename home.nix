@@ -72,4 +72,28 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+  
+  programs.zsh = {
+    enable = true;
+    ohMyZsh = {
+      enable = true;
+      plugins = [
+        "git"
+        {
+          name = "powerlevel10k";
+          src = pkgs.zsh-powerlevel10k;
+          file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+        }
+      ];
+    };
+    promptInit = ''
+      eval "$(zoxide init zsh)"
+    '';
+  };
+  
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
 }
