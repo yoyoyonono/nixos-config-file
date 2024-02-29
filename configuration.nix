@@ -119,6 +119,8 @@
     inxi
     openrgb-with-all-plugins
     zsh
+    htop
+    remmina 
   ];
 
   fonts.packages = with pkgs; [
