@@ -119,7 +119,6 @@
     inxi
     openrgb-with-all-plugins
     zsh
-    zsh-powerlevel10k
   ];
 
   fonts.packages = with pkgs; [
@@ -131,6 +130,10 @@
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
+  };
+
+  programs.zsh = {
+    enable = true;
   };
 
   # Some programs need SUID wrappers, can be configured further or are
