@@ -77,11 +77,13 @@
   
   programs.zsh = {
     enable = true;
-    oh-my-zsh = {
+    zplug = {
       enable = true;
       plugins = [
-        "git"
-        "powerlevel10k"
+        {
+          name = "romkatv/powerlevel10k";
+          tags = [as:theme depth:1];
+        }
       ];
     };
     initExtra = ''
