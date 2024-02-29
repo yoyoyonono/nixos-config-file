@@ -6,7 +6,6 @@
 {
   imports =
     [ 
-      <nixos-hardware/asus/zephyrus/ga401>
       (modulesPath + "/installer/scan/not-detected.nix")
     ];
 

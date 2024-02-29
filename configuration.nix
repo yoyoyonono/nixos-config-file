@@ -7,12 +7,14 @@
 {
   imports =
     [ # Include the results of the hardware scan.
+      <nixos-hardware/asus/zephyrus/ga401>
       ./hardware-configuration.nix
     ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelModules = [ "i2c-dev" "i2c-piix4" ];
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -45,6 +47,13 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+
+  services = {
+    udev.packages = with pkgs; [
+      openrgb-with-all-plugins
+    ];
+  };
+
 
   # Enable sound with pipewire.
   sound.enable = true;
@@ -97,7 +106,14 @@
     stremio
     neofetch
     lshw
-    google-fonts
+    inxi
+    openrgb-with-all-plugins
+    zsh
+  ];
+
+  fonts.packages = with pkgs; [
+    google-fonts 
+    nerdfonts
   ];
 
   programs.steam = {
