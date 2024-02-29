@@ -128,6 +128,7 @@
     htop
     remmina 
     wineWowPackages.waylandFull
+    alsa-scarlett-gui
   ];
 
   fonts.packages = with pkgs; [
