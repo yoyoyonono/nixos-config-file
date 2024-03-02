@@ -39,11 +39,9 @@
     zsh
     zsh-powerlevel10k
     discord
-    vscode
     steam
     stremio
     gitkraken
-    vscode-extensions.vadimcn.vscode-lldb
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -106,4 +104,9 @@
     '';
   };
   
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscode.fhs;
+  };
+
 }
