@@ -17,6 +17,9 @@
     "i2c-dev" 
     "i2c-piix4" 
   ];
+  boot.extraModprobeConfig = ''
+    options snd_usb_audio vid=0x1235 pid=0x8212 device_setup=1
+  '';
   boot.supportedFilesystems = [ "ntfs" ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
