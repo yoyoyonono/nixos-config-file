@@ -121,12 +121,16 @@
     inxi
     openrgb-with-all-plugins
     htop
-    wineWowPackages.waylandFull
+    wineWowPackages.stable
     alsa-scarlett-gui
     gparted
     ntfs3g
     fuse
     gnome.nautilus
+    rustup
+    winetricks
+    file
+    gcc
   ];
 
   fonts.packages = with pkgs; [
