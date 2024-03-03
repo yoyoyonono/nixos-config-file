@@ -42,6 +42,7 @@
     steam
     stremio
     gitkraken
+    mpvpaper
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -76,6 +77,21 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
+  };
+
+  systemd.user.services.wallpaper = {
+    Unit = {
+      Description = "Live wallpaper";
+      PartOf = [ "graphical-session.target" ];
+    };
+    Install = {
+      WantedBy = [ "graphical-session.target" ];
+    };
+    Service = {
+      ExecStart = "${pkgs.writeShellScript "wallpaper" ''
+        mpvpaper -p -o "no-audio loop" "*" ~/wallpaper.mp4
+      ''}";
+    };
   };
 
   # Let Home Manager install and manage itself.

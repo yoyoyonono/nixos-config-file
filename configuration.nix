@@ -137,6 +137,7 @@
     winetricks
     file
     gcc
+    mpv
   ];
 
   fonts.packages = with pkgs; [
