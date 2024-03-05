@@ -152,6 +152,7 @@
     gcc
     mpv
     gnumake
+    texliveFull
   ];
 
   fonts.packages = with pkgs; [
