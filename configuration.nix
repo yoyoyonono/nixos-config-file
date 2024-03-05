@@ -85,6 +85,19 @@
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
+
+    wireplumber.configPackages = [
+      (pkgs.writeTextDir "share/wireplumber/main.lua.d/50-alsa-config.lua" ''
+        table.insert (alsa_monitor.rules, {
+          matches = {
+            { { "device.name", "matches", "alsa_card.*" }, },
+          },
+          apply_properties = {
+            ["api.alsa.ignore-dB"] = true, 
+          },
+        })
+      '')
+    ];
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
