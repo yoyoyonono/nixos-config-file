@@ -140,6 +140,7 @@
     mpv
     gnumake
     texliveFull
+    powertop
   ];
 
   fonts.packages = with pkgs; [
