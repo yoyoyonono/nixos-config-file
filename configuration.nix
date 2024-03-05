@@ -151,6 +151,7 @@
     file
     gcc
     mpv
+    gnumake
   ];
 
   fonts.packages = with pkgs; [
