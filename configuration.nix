@@ -143,10 +143,14 @@
     powertop
   ];
 
-  fonts.packages = with pkgs; [
-    google-fonts 
-    nerdfonts
-  ];
+  fonts = {
+    packages = with pkgs; [
+      google-fonts 
+      nerdfonts
+      ipafont
+      kochi-substitute
+    ];
+  };
 
   programs.steam = {
     enable = true;
