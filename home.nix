@@ -45,6 +45,7 @@
     mpvpaper
     authy
     furnace
+    ns-usbloader
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
