@@ -155,6 +155,7 @@
     texliveFull
     powertop
     pulseaudioFull
+    kdialog
   ];
 
   fonts = {
