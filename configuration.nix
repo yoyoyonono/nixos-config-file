@@ -160,6 +160,7 @@
     kdialog
     lutris
     cmake
+    clang
   ];
 
   fonts = {
