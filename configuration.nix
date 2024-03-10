@@ -156,6 +156,7 @@
     powertop
     pulseaudioFull
     kdialog
+    lutris
   ];
 
   fonts = {
