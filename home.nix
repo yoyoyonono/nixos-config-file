@@ -83,6 +83,7 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
+    NIXOS_OZONE_WL = "1";
   };
 
   systemd.user.services.wallpaper = {
