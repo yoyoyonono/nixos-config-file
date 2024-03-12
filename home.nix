@@ -38,7 +38,6 @@
     # '')
     zsh
     zsh-powerlevel10k
-    discord
     steam
     stremio
     gitkraken
