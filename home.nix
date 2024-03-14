@@ -49,6 +49,7 @@
     vesktop
     postman
     qpwgraph
+    angryipscanner
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
