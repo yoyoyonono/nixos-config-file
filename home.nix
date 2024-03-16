@@ -41,7 +41,6 @@
     steam
     stremio
     gitkraken
-    mpvpaper
     authy
     furnace
     ns-usbloader
@@ -87,20 +86,6 @@
     NIXOS_OZONE_WL = "1";
   };
 
-  systemd.user.services.wallpaper = {
-    Unit = {
-      Description = "Live wallpaper";
-      PartOf = [ "graphical-session.target" ];
-    };
-    Install = {
-      WantedBy = [ "graphical-session.target" ];
-    };
-    Service = {
-      ExecStart = "${pkgs.writeShellScript "wallpaper" ''
-        mpvpaper -p -o "no-audio loop" "*" ~/wallpaper.mp4
-      ''}";
-    };
-  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
