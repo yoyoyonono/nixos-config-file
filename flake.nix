@@ -12,12 +12,7 @@
   };
 
   outputs = { self, nixpkgs, nixos-hardware, ... }@inputs:
-    let
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in
     {
-    
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules = [ 
