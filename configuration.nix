@@ -119,6 +119,13 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  services.flatpak = {
+    enable = true;
+    packages = [
+      "io.github.jeffshee.Hidamari"
+    ];
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.yoyo = {
     isNormalUser = true;
