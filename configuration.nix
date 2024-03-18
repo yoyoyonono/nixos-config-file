@@ -186,6 +186,7 @@
 
   fonts = {
     packages = with pkgs; [
+      corefonts
       google-fonts 
       nerdfonts
       ipafont
