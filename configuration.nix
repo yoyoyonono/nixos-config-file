@@ -57,6 +57,14 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
+  i18n.inputMethod = {
+    enabled = "fcitx5";
+    fcitx5.addons = with pkgs; [
+      fcitx5-mozc
+      fcitx5-gtk 
+    ];
+  };
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
