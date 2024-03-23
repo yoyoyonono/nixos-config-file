@@ -51,6 +51,8 @@
     angryipscanner
     python3
     parsec-bin
+    kdePackages.kmines
+    kdePackages.kpat
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
