@@ -53,6 +53,7 @@
     parsec-bin
     kdePackages.kmines
     kdePackages.kpat
+    kdePackages.krdc
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
