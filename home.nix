@@ -54,6 +54,7 @@
     kdePackages.kmines
     kdePackages.kpat
     kdePackages.krdc
+    qbittorrent
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
