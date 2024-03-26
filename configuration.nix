@@ -87,6 +87,12 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+    openFirewall = true;
+  };
+
   services = {
     udev.packages = with pkgs; [
       openrgb-with-all-plugins
