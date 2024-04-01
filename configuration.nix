@@ -78,6 +78,15 @@
   services.xserver.displayManager.defaultSession = "plasma";
   services.desktopManager.plasma6.enable = true;
 
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-kde
+    ];
+  };
+
 #  # Configure keymap in X11
 #  services.xserver.xkb = {
 #    layout = "us";
