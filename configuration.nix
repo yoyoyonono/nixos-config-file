@@ -149,11 +149,19 @@
     ];
   };
 
+  services.syncthing = {
+    enable = true;
+    openDefaultPorts = true;
+    user = "yoyo";
+    dataDir = "/home/yoyo/Documents";
+    configDir = "/home/yoyo/.config/syncthing";
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.yoyo = {
     isNormalUser = true;
     description = "Erina";
-    extraGroups = [ "networkmanager" "wheel" "dialout" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "syncthing"];
     packages = with pkgs; [
       firefox
     #  thunderbird
