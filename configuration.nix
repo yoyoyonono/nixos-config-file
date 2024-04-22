@@ -157,6 +157,14 @@
     configDir = "/home/yoyo/.config/syncthing";
   };
 
+  services.zerotierone = {
+    enable = true;
+    joinNetworks = [
+      "b15644912ece0d14" 
+    ];
+    port = 9993;
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.yoyo = {
     isNormalUser = true;
