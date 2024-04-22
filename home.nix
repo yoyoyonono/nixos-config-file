@@ -59,6 +59,7 @@
     kdePackages.kasts
     obs-studio
     ventoy
+    kdePackages.kdenlive
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
