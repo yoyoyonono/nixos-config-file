@@ -105,6 +105,7 @@
   services = {
     udev.packages = with pkgs; [
       openrgb-with-all-plugins
+      openocd
     ];
   };
 
@@ -169,7 +170,7 @@
   users.users.yoyo = {
     isNormalUser = true;
     description = "Erina";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "syncthing"];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "syncthing" "plugdev"];
     packages = with pkgs; [
       firefox
     #  thunderbird
