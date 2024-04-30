@@ -256,7 +256,7 @@
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
-
+    systemd
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
