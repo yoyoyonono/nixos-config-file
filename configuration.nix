@@ -227,6 +227,7 @@
     cmake
     clang
     alsa-utils
+    ghidra
   ];
 
   fonts = {
