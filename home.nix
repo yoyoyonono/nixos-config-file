@@ -57,7 +57,6 @@
     qbittorrent
     transgui
     kdePackages.kasts
-    obs-studio
     ventoy
     kdePackages.kdenlive
     dig
@@ -132,6 +131,13 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscode.fhs;
+  };
+
+  programs.obs-studio = {
+    enable = true;
+    plugins = with pkgs.obs-studio-plugins; [
+      waveform
+    ];
   };
 
 }
