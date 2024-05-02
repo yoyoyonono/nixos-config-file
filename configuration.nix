@@ -202,7 +202,6 @@
     git
     gh
     neovim
-    neofetch
     lshw
     inxi
     openrgb-with-all-plugins
