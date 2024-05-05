@@ -227,6 +227,7 @@
     clang
     alsa-utils
     ghidra
+    unrar-wrapper
   ];
 
   fonts = {
