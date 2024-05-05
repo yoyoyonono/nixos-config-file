@@ -66,6 +66,7 @@
     corrscope
     hyfetch
     hexchat
+    krita
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
