@@ -228,6 +228,7 @@
     alsa-utils
     ghidra
     unrar-wrapper
+    yakuake
   ];
 
   fonts = {
