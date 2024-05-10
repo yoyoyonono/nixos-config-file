@@ -141,6 +141,7 @@
     enable = true;
     plugins = with pkgs.obs-studio-plugins; [
       waveform
+      obs-multi-rtmp
     ];
   };
 
