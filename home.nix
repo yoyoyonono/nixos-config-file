@@ -41,7 +41,6 @@
     steam
     stremio
     gitkraken
-    authy
     furnace
     ns-usbloader
     itch
