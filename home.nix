@@ -42,7 +42,6 @@
     stremio
     gitkraken
     furnace
-    ns-usbloader
     itch
     vesktop
     postman
