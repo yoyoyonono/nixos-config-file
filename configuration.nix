@@ -211,7 +211,6 @@
     gparted
     ntfs3g
     fuse
-    gnome.nautilus
     rustup
     winetricks
     file
