@@ -173,7 +173,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.yoyo = {
     isNormalUser = true;
-    description = "Erina";
+    description = "エリナ";
     extraGroups = [ "networkmanager" "wheel" "dialout" "syncthing" "plugdev"];
     packages = with pkgs; [
       firefox
