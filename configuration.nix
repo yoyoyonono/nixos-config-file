@@ -27,7 +27,7 @@
   nix.settings.substituters = ["https://aseipp-nix-cache.freetls.fastly.net"];
 
   networking = {
-    hostName = "nixos"; # Define your hostname.
+    hostName = "nixos-yoyo"; # Define your hostname.
 
     nameservers = [ 
       "1.0.0.1"
