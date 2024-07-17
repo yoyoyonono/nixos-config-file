@@ -268,6 +268,19 @@
   virtualisation.virtualbox.host.enableExtensionPack = true;
   users.extraGroups.vboxusers.members = [ "yoyo" ];
 
+  services.samba = {
+    enable = true;
+    securityType = "user";
+    openFirewall = true;
+    shares = {
+      share = {
+        path = "/home/yoyo/Documents";
+        "read only" = "yes";
+        "guest ok" = "no";
+      };
+    };
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
