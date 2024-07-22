@@ -263,8 +263,6 @@
     enable = true;
   };
 
-  users.extraGroups.vboxusers.members = [ "yoyo" ];
-
   services.samba = {
     enable = true;
     securityType = "user";
