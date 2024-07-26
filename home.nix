@@ -68,6 +68,8 @@
     osu-lazer-bin
     hypnotix
     mangohud
+    traceroute
+    usbutils
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
