@@ -173,7 +173,7 @@
   users.users.yoyo = {
     isNormalUser = true;
     description = "エリナ";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "syncthing" "plugdev"];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "syncthing" "plugdev" "libvirtd"];
     packages = with pkgs; [
       firefox
     #  thunderbird
@@ -227,6 +227,7 @@
     ghidra
     unrar-wrapper
     yakuake
+    virt-manager
   ];
 
   fonts = {
@@ -272,6 +273,22 @@
         path = "/home/yoyo/Documents";
         "read only" = "yes";
         "guest ok" = "no";
+      };
+    };
+  };
+
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      ovmf = {
+        enable = true;
+        packages = [(pkgs.OVMF.override {
+          secureBoot = true;
+          tpmSupport = true;
+        }).fd];
       };
     };
   };
