@@ -70,7 +70,6 @@
     mangohud
     traceroute
     usbutils
-    kodi-wayland
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -150,6 +149,14 @@
       waveform
       obs-multi-rtmp
     ];
+  };
+
+  programs.kodi = {
+    enable = true;
+    package = pkgs.kodi-wayland.withPackages (kodiPkgs: with kodiPkgs; [
+      joystick
+    ]);
+
   };
 
 }
