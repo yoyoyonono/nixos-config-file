@@ -70,6 +70,9 @@
     mangohud
     traceroute
     usbutils
+    android-studio
+    android-tools
+    flutter
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
