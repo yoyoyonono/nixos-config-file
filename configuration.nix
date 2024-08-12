@@ -109,6 +109,7 @@
   services = {
     udev.packages = with pkgs; [
       openrgb-with-all-plugins
+      platformio-core
       openocd
     ];
   };
@@ -231,6 +232,8 @@
     unrar-wrapper
     yakuake
     virt-manager
+    platformio
+    platformio-core
   ];
 
   fonts = {
