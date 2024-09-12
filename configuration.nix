@@ -229,7 +229,6 @@
     cmake
     clang
     alsa-utils
-    ghidra
     unrar-wrapper
     yakuake
     virt-manager
