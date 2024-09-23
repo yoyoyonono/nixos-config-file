@@ -234,6 +234,9 @@
     virt-manager
     platformio
     platformio-core
+    kdePackages.kio-gdrive
+    kdePackages.kaccounts-providers
+    kdePackages.kaccounts-integration
   ];
 
   fonts = {
@@ -264,6 +267,7 @@
   programs.nix-ld.libraries = with pkgs; [
     systemd
     libGL
+    kdePackages.signond
   ];
   
   programs.ns-usbloader = {
