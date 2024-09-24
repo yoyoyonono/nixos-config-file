@@ -237,6 +237,7 @@
     kdePackages.kio-gdrive
     kdePackages.kaccounts-providers
     kdePackages.kaccounts-integration
+    google-chrome
   ];
 
   fonts = {
