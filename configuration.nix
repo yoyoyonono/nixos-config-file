@@ -10,6 +10,11 @@
       ./hardware-configuration.nix
     ];
 
+  swapDevices = [{
+    device = "/swapfile";
+    size = 8 * 1024; 
+  }];
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
