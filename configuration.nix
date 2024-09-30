@@ -238,6 +238,7 @@
     kdePackages.kaccounts-providers
     kdePackages.kaccounts-integration
     google-chrome
+    kdePackages.merkuro
   ];
 
   fonts = {
