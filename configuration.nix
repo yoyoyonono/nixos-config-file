@@ -283,9 +283,9 @@
 
   services.samba = {
     enable = true;
-    securityType = "user";
     openFirewall = true;
-    shares = {
+    settings = {
+      global.security = "user";
       share = {
         path = "/home/yoyo/Documents";
         "read only" = "yes";
