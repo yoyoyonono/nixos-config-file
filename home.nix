@@ -76,6 +76,7 @@
     dopewars
     ryujinx
     nix-search-cli
+    ente-auth
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
