@@ -247,6 +247,7 @@
     kdePackages.kaccounts-providers
     kdePackages.kaccounts-integration
     kdePackages.merkuro
+    rclone
   ];
 
   fonts = {
