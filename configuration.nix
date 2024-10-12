@@ -97,6 +97,10 @@
     ];
   };
 
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    discover
+];
+
 #  # Configure keymap in X11
 #  services.xserver.xkb = {
 #    layout = "us";
