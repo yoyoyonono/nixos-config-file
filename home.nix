@@ -190,6 +190,7 @@
     " actual config
 
     set noswapfile
+    set number
     '';
   };
 
