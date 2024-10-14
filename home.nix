@@ -89,6 +89,11 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 
+    ".vim_runtime/" = {
+      source = dotfiles/vimrc;
+      recursive = true;
+    };
+
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
@@ -171,6 +176,16 @@
   programs.vim = {
     enable = true;
     extraConfig = ''
+    " for amix/vimrc
+    set runtimepath+=~/.vim_runtime
+
+    source ~/.vim_runtime/vimrcs/basic.vim
+    source ~/.vim_runtime/vimrcs/filetypes.vim
+    source ~/.vim_runtime/vimrcs/plugins_config.vim
+    source ~/.vim_runtime/vimrcs/extended.vim
+
+    " actual config
+
     set noswapfile
     '';
   };
