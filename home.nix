@@ -90,7 +90,10 @@
     # ".screenrc".source = dotfiles/screenrc;
 
     ".vim_runtime/" = {
-      source = dotfiles/vimrc;
+      source =  builtins.fetchGit {
+        url = "https://github.com/amix/vimrc";
+        rev = "46294d589d15d2e7308cf76c58f2df49bbec31e8";
+      };
       recursive = true;
     };
 
