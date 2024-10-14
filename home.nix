@@ -167,5 +167,12 @@
     ]);
 
   };
+  
+  programs.vim = {
+    enable = true;
+    extraConfig = ''
+    set noswapfile
+    '';
+  };
 
 }
