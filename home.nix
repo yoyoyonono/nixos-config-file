@@ -79,6 +79,7 @@
     ente-auth
     weechat
     google-chrome
+    winbox
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
