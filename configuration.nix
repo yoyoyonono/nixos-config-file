@@ -248,6 +248,7 @@
     kdePackages.kaccounts-integration
     kdePackages.merkuro
     rclone
+    feh
   ];
 
   fonts = {
