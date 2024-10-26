@@ -82,6 +82,7 @@
     winbox
     aerc
     toot
+    fzf
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -133,7 +134,12 @@
   
   programs.zsh = {
     enable = true;
-    oh-my-zsh.enable = true;
+    oh-my-zsh = {
+      enable = true;
+      plugins = [
+        "fzf"
+      ];
+    };
     zplug = {
       enable = true;
       plugins = [
