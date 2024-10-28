@@ -46,7 +46,6 @@
     vesktop
     postman
     qpwgraph
-    angryipscanner
     python3
     parsec-bin
     kdePackages.kmines
