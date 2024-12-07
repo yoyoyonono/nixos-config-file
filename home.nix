@@ -86,6 +86,8 @@
     thunderbird
     ghidra
     radare2
+    cargo-flamegraph
+    hyperfine
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
