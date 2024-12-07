@@ -204,6 +204,7 @@
 
     set noswapfile
     set number
+    set textwidth=0
     '';
   };
 
