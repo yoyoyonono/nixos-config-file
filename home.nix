@@ -88,6 +88,7 @@
     radare2
     cargo-flamegraph
     hyperfine
+    yazi
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
