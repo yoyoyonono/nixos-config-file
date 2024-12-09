@@ -88,7 +88,6 @@
     radare2
     cargo-flamegraph
     hyperfine
-    yazi
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -209,6 +208,16 @@
     set number
     set textwidth=0
     '';
+  };
+
+  programs.yazi = {
+    enable = true;
+    enableZshIntegration = true;
+    settings = {
+      manager = {
+        show_hidden = true;
+      };
+    };
   };
 
 }
