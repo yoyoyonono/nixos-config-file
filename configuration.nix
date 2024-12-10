@@ -230,7 +230,7 @@
     gcc
     mpv
     gnumake
-    texlive.combined.scheme-full
+    (texlive.combined.scheme-full.__overrideTeXConfig{withDocs = true;})
     powertop
     pulseaudioFull
     kdialog
