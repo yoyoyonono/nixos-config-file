@@ -230,7 +230,6 @@
     kdePackages.kaccounts-integration
     kdePackages.kaccounts-providers
     kdePackages.kio-gdrive
-    kdePackages.merkuro
     kdialog
     lf
     lshw

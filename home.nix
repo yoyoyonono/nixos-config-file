@@ -52,13 +52,10 @@
     ghidra
     gitkraken
     google-chrome
-    hexchat
     hyfetch
     hyperfine
-    hypnotix
     itch
     kdePackages.kasts
-    kdePackages.kdenlive
     kdePackages.kmines
     kdePackages.kpat
     kdePackages.krdc
