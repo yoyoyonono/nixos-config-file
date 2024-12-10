@@ -230,7 +230,7 @@
     gcc
     mpv
     gnumake
-    texliveFull
+    texlive.combined.scheme-full
     powertop
     pulseaudioFull
     kdialog
