@@ -27,9 +27,12 @@
   '';
   boot.supportedFilesystems = [ "ntfs" ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings = {
+    auto-optimise-store = true;
+    experimental-features = [ "nix-command" "flakes" ];
+    substituters = ["https://aseipp-nix-cache.freetls.fastly.net"];
+  };
 
-  nix.settings.substituters = ["https://aseipp-nix-cache.freetls.fastly.net"];
 
   networking = {
     hostName = "nixos-yoyo"; # Define your hostname.
