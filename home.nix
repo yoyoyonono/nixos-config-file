@@ -103,6 +103,8 @@
       recursive = true;
     };
 
+    ".config/ghostty/config".source = dotfiles/ghostty/config;
+
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
