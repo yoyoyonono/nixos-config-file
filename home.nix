@@ -36,58 +36,58 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-    zsh
-    zsh-powerlevel10k
-    steam
-    stremio
-    gitkraken
+    aerc
+    android-studio
+    android-tools
+    audacity
+    cargo-flamegraph
+    corrscope
+    dig
+    dopewars
+    ente-auth
+    ffmpeg
+    flutter
     furnace
+    fzf
+    ghidra
+    gitkraken
+    google-chrome
+    hexchat
+    hyfetch
+    hyperfine
+    hypnotix
     itch
-    vesktop
-    postman
-    qpwgraph
-    python3
-    parsec-bin
+    kdePackages.kasts
+    kdePackages.kdenlive
     kdePackages.kmines
     kdePackages.kpat
     kdePackages.krdc
-    qbittorrent
-    transgui
-    kdePackages.kasts
-    ventoy
-    kdePackages.kdenlive
-    dig
-    ffmpeg
-    yt-dlp
-    audacity
-    corrscope
-    hyfetch
-    hexchat
     krita
-    osu-lazer-bin
-    hypnotix
-    mangohud
-    traceroute
-    usbutils
-    android-studio
-    android-tools
-    flutter
-    dopewars
-    ryujinx
-    nix-search-cli
-    ente-auth
-    weechat
-    google-chrome
-    winbox
-    aerc
-    toot
-    fzf
     lmms
-    thunderbird
-    ghidra
+    mangohud
+    nix-search-cli
+    osu-lazer-bin
+    parsec-bin
+    postman
+    python3
+    qbittorrent
+    qpwgraph
     radare2
-    cargo-flamegraph
-    hyperfine
+    ryujinx
+    steam
+    stremio
+    thunderbird
+    toot
+    traceroute
+    transgui
+    usbutils
+    ventoy
+    vesktop
+    weechat
+    winbox
+    yt-dlp
+    zsh
+    zsh-powerlevel10k
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

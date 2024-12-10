@@ -211,48 +211,48 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    lf
-    zoxide
-    git
-    gh
-    neovim
-    lshw
-    inxi
-    openrgb-with-all-plugins
-    htop
-    wineWowPackages.stable
-    alsa-scarlett-gui
-    gparted
-    ntfs3g
-    fuse
-    rustup
-    winetricks
-    file
-    gcc
-    mpv
-    gnumake
     (texlive.combined.scheme-full.__overrideTeXConfig{withDocs = true;})
-    powertop
-    pulseaudioFull
-    kdialog
-    lutris
-    cmake
-    clang
+    alsa-scarlett-gui
     alsa-utils
-    unrar-wrapper
-    yakuake
-    virt-manager
+    clang
+    cmake
+    feh
+    file
+    fuse
+    gcc
+    gh
+    git
+    gnumake
+    gparted
+    htop
+    inputs.ghostty.packages.x86_64-linux.default
+    inxi
+    kdePackages.kaccounts-integration
+    kdePackages.kaccounts-providers
+    kdePackages.kio-gdrive
+    kdePackages.merkuro
+    kdialog
+    lf
+    lshw
+    lutris
+    mpv
+    neovim
+    ntfs3g
+    openrgb-with-all-plugins
     platformio
     platformio-core
-    kdePackages.kio-gdrive
-    kdePackages.kaccounts-providers
-    kdePackages.kaccounts-integration
-    kdePackages.merkuro
+    powertop
+    pulseaudioFull
     rclone
-    feh
-    inputs.ghostty.packages.x86_64-linux.default
+    rustup
+    unrar-wrapper
+    vim
+    virt-manager
+    wget
+    wineWowPackages.stable
+    winetricks
+    yakuake
+    zoxide
   ];
 
   fonts = {
