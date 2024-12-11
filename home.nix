@@ -45,6 +45,7 @@
     dig
     dopewars
     ente-auth
+    evcxr
     ffmpeg
     flutter
     furnace
