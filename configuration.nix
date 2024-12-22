@@ -258,10 +258,9 @@
     packages = with pkgs; [
       corefonts
       google-fonts 
-      nerdfonts
       ipafont
       kochi-substitute
-    ];
+    ] ++ (builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts));
   };
 
   programs.steam = {
