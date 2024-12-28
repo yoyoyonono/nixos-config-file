@@ -339,6 +339,7 @@
   networking.firewall.allowedUDPPorts = [ 
     51820
   ];
+  networking.firewall.checkReversePath = false; 
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
