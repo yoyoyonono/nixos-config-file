@@ -144,13 +144,17 @@
     #media-session.enable = true;
 
     wireplumber.configPackages = [
-      (pkgs.writeTextDir "share/wireplumber/main.lua.d/99-d3-fix.lua" ''
-        table.insert (alsa_monitor.rules, {
-          matches = {
-            { { "device.name", "matches", "alsa_card.usb-Audioengine_Audioengine_D3_Audioengine-00" }, },
-          },
-          apply_properties = {
-            ["api.alsa.ignore-dB"] = true, 
+      (pkgs.writeTextDir "share/wireplumber/wireplumber.conf.d/99-d3-fix.conf" ''
+        table.insert (monitor.alsa.rules, {
+          matches = [
+            {
+              device.name = "alsa_card.usb-Audioengine_Audioengine_D3_Audioengine-00"
+            }
+          ]
+          actions = {
+            update-props = {
+              api.alsa.ignore-dB = true
+            }
           },
         })
       '')
