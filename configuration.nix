@@ -240,6 +240,7 @@
     lf
     lshw
     lutris
+    mixxx
     mpv
     neovim
     ntfs3g
