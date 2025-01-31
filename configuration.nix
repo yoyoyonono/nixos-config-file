@@ -231,7 +231,6 @@
     gnumake
     gparted
     htop
-    inputs.ghostty.packages.x86_64-linux.default
     inxi
     kdePackages.kaccounts-integration
     kdePackages.kaccounts-providers

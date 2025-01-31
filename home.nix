@@ -51,6 +51,7 @@
     furnace
     fzf
     ghidra
+    ghostty
     gitkraken
     google-chrome
     hyfetch
