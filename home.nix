@@ -74,6 +74,7 @@
     qpwgraph
     radare2
     ryujinx
+    soulseekqt
     steam
     stremio
     thunderbird
