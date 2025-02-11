@@ -54,6 +54,7 @@
     ghostty
     gitkraken
     google-chrome
+    hexchat
     hyfetch
     hyperfine
     itch
