@@ -67,6 +67,7 @@
     lmms
     mangohud
     nix-search-cli
+    octaveFull
     osu-lazer-bin
     parsec-bin
     postman
