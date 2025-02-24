@@ -64,6 +64,7 @@
     kdePackages.krdc
     krita
     libreoffice-qt6
+    linphone
     lmms
     mangohud
     nix-search-cli
