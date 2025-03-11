@@ -37,12 +37,12 @@
   networking = {
     hostName = "nixos-yoyo"; # Define your hostname.
 
-    nameservers = [ 
-      "1.0.0.1"
-      "1.1.1.1" 
-      "2606:4700:4700::1001"
-      "2606:4700:4700::1111"
-    ];
+    # nameservers = [ 
+    #   "1.0.0.1"
+    #   "1.1.1.1" 
+    #   "2606:4700:4700::1001"
+    #   "2606:4700:4700::1111"
+    # ];
 
 
     # wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -341,7 +341,10 @@
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 3389 ];
+  networking.firewall.allowedTCPPorts = [ 
+    3389
+    445
+  ];
   networking.firewall.allowedUDPPorts = [ 
     51820
   ];
