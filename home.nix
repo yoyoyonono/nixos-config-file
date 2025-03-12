@@ -39,6 +39,7 @@
     aerc
     android-studio
     android-tools
+    aseprite
     audacity
     cargo-flamegraph
     corrscope
