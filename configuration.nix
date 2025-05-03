@@ -256,7 +256,7 @@
     wget
     wineWowPackages.stable
     winetricks
-    yakuake
+    kdePackages.yakuake
     zoxide
   ];
 
