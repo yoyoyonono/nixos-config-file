@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -161,16 +161,14 @@
         }
       ];
     };
-    initExtra = ''
+    initContent = lib.mkOrder 550 ''
+      # p10k instant prompt
+      P10K_INSTANT_PROMPT="$XDG_CACHE_HOME/p10k-instant-prompt-''${(%):-%n}.zsh"
+      [[ ! -r "$P10K_INSTANT_PROMPT" ]] || source "$P10K_INSTANT_PROMPT"
       # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
       [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
       eval "$(zoxide init zsh)"
       eval "$(direnv hook zsh)"
-    '';
-    initExtraBeforeCompInit = ''
-      # p10k instant prompt
-      P10K_INSTANT_PROMPT="$XDG_CACHE_HOME/p10k-instant-prompt-''${(%):-%n}.zsh"
-      [[ ! -r "$P10K_INSTANT_PROMPT" ]] || source "$P10K_INSTANT_PROMPT"
     '';
     shellAliases = {
       corrscope = "corr";
