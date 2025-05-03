@@ -234,8 +234,8 @@
     inxi
     kdePackages.kaccounts-integration
     kdePackages.kaccounts-providers
+    kdePackages.kdialog
     kdePackages.kio-gdrive
-    kdialog
     lf
     lshw
     lutris
