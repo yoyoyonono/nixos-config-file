@@ -197,7 +197,7 @@
   users.users.yoyo = {
     isNormalUser = true;
     description = "エリナ";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "syncthing" "plugdev" "libvirtd"];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "syncthing" "plugdev" "libvirtd" "docker"];
     packages = with pkgs; [
       firefox
     #  thunderbird
@@ -322,6 +322,10 @@
         }).fd];
       };
     };
+  };
+
+  virtualisation.docker = {
+    enable = true;
   };
 
   environment.sessionVariables = {
