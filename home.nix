@@ -63,6 +63,7 @@
     kdePackages.kmines
     kdePackages.kpat
     kdePackages.krdc
+    kicad
     krita
     libreoffice-qt6
     linphone
