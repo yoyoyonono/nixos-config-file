@@ -87,7 +87,6 @@
     traceroute
     transgui
     usbutils
-    ventoy
     vesktop
     weechat
     winbox
