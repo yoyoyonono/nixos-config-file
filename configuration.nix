@@ -224,20 +224,12 @@
     gparted
     htop
     inxi
-    kdePackages.kaccounts-integration
-    kdePackages.kaccounts-providers
-    kdePackages.kdialog
-    kdePackages.kio-gdrive
-    lf
     lshw
     lutris
     mixxx
     mpv
     neovim
     ntfs3g
-    openrgb-with-all-plugins
-    platformio
-    platformio-core
     powertop
     pulseaudioFull
     rclone

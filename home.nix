@@ -39,7 +39,6 @@
     aerc
     android-studio
     android-tools
-    aseprite
     audacity
     cargo-flamegraph
     corrscope
@@ -51,11 +50,9 @@
     flutter
     furnace
     fzf
-    ghidra
     ghostty
     gitkraken
     google-chrome
-    hexchat
     hyfetch
     hyperfine
     itch
@@ -66,24 +63,19 @@
     kicad
     krita
     libreoffice-qt6
-    linphone
-    lmms
     mangohud
     nix-search-cli
     octaveFull
     osu-lazer-bin
     parsec-bin
-    postman
     python3
     qbittorrent
     qpwgraph
-    radare2
     ryujinx
     soulseekqt
     steam
     stremio
     thunderbird
-    toot
     traceroute
     transgui
     usbutils
