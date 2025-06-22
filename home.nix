@@ -72,7 +72,6 @@
     qbittorrent
     qpwgraph
     ryujinx
-    soulseekqt
     steam
     stremio
     thunderbird
