@@ -64,6 +64,7 @@
     krita
     libreoffice-qt6
     mangohud
+    nicotine-plus
     nix-search-cli
     octaveFull
     osu-lazer-bin
