@@ -104,6 +104,9 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  services.printing.drivers = [
+    pkgs.canon-cups-ufr2
+  ];
 
   services.avahi = {
     enable = true;
