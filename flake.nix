@@ -13,8 +13,17 @@
   };
 
   outputs = { self, nixpkgs, nixos-hardware, nix-flatpak, ... }@inputs:
-    {
+    let 
+      system = "x86_64-linux";
+      overlays = [ (import ./overlays)];
+      pkgs = import nixpkgs {
+        inherit system overlays;
+        config.allowUnfree = true;
+      };
+    in {
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+          pkgs = pkgs;
+          system = system;
           specialArgs = {inherit inputs;};
           modules = [ 
             ./configuration.nix
