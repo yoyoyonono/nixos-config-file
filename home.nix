@@ -72,7 +72,7 @@
     python3
     qbittorrent
     qpwgraph
-    ryujinx
+    ryubing
     steam
     stremio
     thunderbird
