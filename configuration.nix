@@ -57,7 +57,7 @@
 
 
   # Set your time zone.
-  time.timeZone = "Asia/Kathmandu";
+  time.timeZone = "America/New_York";
   time.hardwareClockInLocalTime = true;
 
   # Select internationalisation properties.
