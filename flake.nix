@@ -18,7 +18,12 @@
       overlays = [ (import ./overlays)];
       pkgs = import nixpkgs {
         inherit system overlays;
-        config.allowUnfree = true;
+        config = {
+          allowUnfree = true;
+          permittedInsecurePackages = [
+            "ventoy-1.1.05"
+          ];
+        };
       };
     in {
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
