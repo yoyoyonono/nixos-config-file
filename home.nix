@@ -47,6 +47,7 @@
     ente-auth
     evcxr
     ffmpeg
+    firefox-bin
     flutter
     furnace
     fzf

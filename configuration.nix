@@ -195,7 +195,6 @@
     description = "エリナ";
     extraGroups = [ "networkmanager" "wheel" "dialout" "syncthing" "plugdev" "libvirtd"];
     packages = with pkgs; [
-      firefox
     #  thunderbird
     ];
     shell = pkgs.zsh;
