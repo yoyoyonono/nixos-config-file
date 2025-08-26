@@ -224,6 +224,8 @@
     gnumake
     gparted
     htop
+    hunspell
+    hunspellDicts.en_US
     inxi
     lshw
     lutris
