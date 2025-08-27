@@ -81,7 +81,6 @@
     transgui
     usbutils
     vesktop
-    wechat-uos
     weechat
     winbox
     yt-dlp
