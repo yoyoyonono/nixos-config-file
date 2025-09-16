@@ -80,23 +80,28 @@
 #  services.xserver.desktopManager.gnome.enable = true;
 
   # Enable Plasma for wayland
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
-  services.displayManager.defaultSession = "plasma";
-  services.desktopManager.plasma6.enable = true;
+  # services.displayManager.sddm.enable = true;
+  # services.displayManager.sddm.wayland.enable = true;
+  # services.displayManager.defaultSession = "plasma";
+  # services.desktopManager.plasma6.enable = true;
 
-  xdg.portal = {
+  # xdg.portal = {
+  #   enable = true;
+  #   extraPortals = with pkgs; [
+  #     xdg-desktop-portal
+  #     xdg-desktop-portal-gtk
+  #     kdePackages.xdg-desktop-portal-kde
+  #   ];
+  # };
+
+  # environment.plasma6.excludePackages = with pkgs.kdePackages; [
+  #   discover
+  # ];
+
+  programs.sway = {
     enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal
-      xdg-desktop-portal-gtk
-      kdePackages.xdg-desktop-portal-kde
-    ];
+    wrapperFeatures.gtk = true;
   };
-
-  environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    discover
-];
 
 #  # Configure keymap in X11
 #  services.xserver.xkb = {
