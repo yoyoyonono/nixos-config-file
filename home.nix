@@ -83,6 +83,7 @@
     vesktop
     weechat
     winbox
+    wl-clipboard
     yt-dlp
     zsh
     zsh-powerlevel10k
