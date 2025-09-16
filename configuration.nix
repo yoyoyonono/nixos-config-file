@@ -262,6 +262,7 @@
     wget
     wineWowPackages.stable
     winetricks
+    wmenu
     zoxide
   ];
 
