@@ -227,6 +227,7 @@
     hunspell
     hunspellDicts.en_US
     inxi
+    kdePackages.yakuake
     lshw
     lutris
     mixxx
@@ -245,7 +246,6 @@
     wget
     wineWowPackages.stable
     winetricks
-    kdePackages.yakuake
     zoxide
   ];
 
