@@ -227,6 +227,17 @@
     hunspell
     hunspellDicts.en_US
     inxi
+    kdePackages.ark
+    kdePackages.baloo-widgets
+    kdePackages.dolphin
+    kdePackages.dolphin-plugins
+    kdePackages.elisa
+    kdePackages.ffmpegthumbs
+    kdePackages.gwenview
+    kdePackages.kate
+    kdePackages.konsole
+    kdePackages.okular
+    kdePackages.spectacle
     kdePackages.yakuake
     lshw
     lutris
