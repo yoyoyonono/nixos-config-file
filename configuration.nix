@@ -259,6 +259,7 @@
     ventoy
     vim
     virt-manager
+    wayshot
     wget
     wineWowPackages.stable
     winetricks
