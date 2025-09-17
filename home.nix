@@ -41,6 +41,7 @@
     android-tools
     audacity
     cargo-flamegraph
+    cemu-ti
     corrscope
     dig
     dopewars
