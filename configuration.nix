@@ -270,7 +270,6 @@
     rclone
     rustup
     unrar-wrapper
-    ventoy
     vim
     virt-manager
     waybar

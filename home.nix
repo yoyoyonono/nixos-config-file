@@ -75,7 +75,6 @@
     qpwgraph
     ryubing
     steam
-    stremio
     thunderbird
     traceroute
     transgui
