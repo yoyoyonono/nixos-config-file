@@ -242,6 +242,8 @@
     kdePackages.gwenview
     kdePackages.kate
     kdePackages.konsole
+    kdePackages.kwallet
+    kdePackages.kwalletmanager
     kdePackages.okular
     kdePackages.spectacle
     kdePackages.yakuake
