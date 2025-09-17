@@ -260,6 +260,7 @@
     ventoy
     vim
     virt-manager
+    waybar
     wayshot
     wget
     wineWowPackages.stable
