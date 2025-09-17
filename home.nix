@@ -107,6 +107,7 @@
 
     ".config/ghostty/config".source = dotfiles/ghostty/config;
     ".config/sway/config".source = dotfiles/sway/config;
+    ".config/waybar/config.jsonc".source = dotfiles/waybar/config.jsonc;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
