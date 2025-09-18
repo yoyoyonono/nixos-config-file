@@ -66,6 +66,7 @@
     krita
     libreoffice-qt6
     mangohud
+    mpvpaper
     nicotine-plus
     nix-search-cli
     octaveFull
@@ -135,7 +136,6 @@
     # EDITOR = "emacs";
     NIXOS_OZONE_WL = "1";
   };
-
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
