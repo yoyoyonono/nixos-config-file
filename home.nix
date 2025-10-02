@@ -84,6 +84,7 @@
     vesktop
     weechat
     winbox
+    wireshark
     wl-clipboard
     yt-dlp
     zsh
