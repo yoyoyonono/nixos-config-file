@@ -49,7 +49,7 @@ exec mpvpaper -p -o "no-audio loop" "*" ~/Videos/Hidamari/wallpaper.mp4
 # Example configuration:
 #
    input type:touchpad {
-       dwt enabled
+       dwt disabled
        tap enabled
        natural_scroll enabled
        middle_emulation enabled
