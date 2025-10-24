@@ -67,6 +67,7 @@
     libreoffice-qt6
     mangohud
     mpvpaper
+    nh
     nicotine-plus
     nix-search-cli
     octaveFull
