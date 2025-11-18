@@ -72,6 +72,7 @@
     octaveFull
     osu-lazer-bin
     parsec-bin
+    prismlauncher
     python3
     qbittorrent
     qpwgraph
