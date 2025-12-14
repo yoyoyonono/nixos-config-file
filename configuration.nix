@@ -104,6 +104,10 @@
         package = pkgs.swayfx;
         wrapperFeatures.gtk = true;
       };
+
+      services.udisks2 = {
+        enable = true;
+      };
     };
 
   };
@@ -274,6 +278,7 @@
     pulseaudioFull
     rclone
     rustup
+    udiskie
     unrar-wrapper
     vim
     virt-manager
