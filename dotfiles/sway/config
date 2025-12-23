@@ -231,4 +231,6 @@ bar {
 default_dim_inactive 0.2
 focus_follows_mouse always
 
+exec --no-startup-id fcitx5 -d
+
 include /etc/sway/config.d/*
