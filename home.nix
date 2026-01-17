@@ -43,7 +43,6 @@
     cargo-flamegraph
     corrscope
     dig
-    dopewars
     ente-auth
     evcxr
     ffmpeg
