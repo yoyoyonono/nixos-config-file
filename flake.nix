@@ -5,14 +5,17 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
-
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, nix-flatpak, ... }@inputs:
+  outputs = { self, nixpkgs, nixos-hardware, nix-flatpak, nix-index-database, ... }@inputs:
     let 
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -31,6 +34,12 @@
             inputs.home-manager.nixosModules.default
             nixos-hardware.nixosModules.asus-zephyrus-ga401
             nix-flatpak.nixosModules.nix-flatpak
+
+            {
+              home-manager.sharedModules = [
+                nix-index-database.homeModules.default
+              ];
+            }
           ];
         };
     };
