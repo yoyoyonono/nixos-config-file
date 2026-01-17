@@ -77,6 +77,7 @@
     qbittorrent
     qpwgraph
     ryubing
+    sshpass
     steam
     thunderbird
     traceroute
