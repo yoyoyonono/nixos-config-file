@@ -228,6 +228,9 @@
     enableBashIntegration = true;
     enableZshIntegration = true;
   };
-
+  
+  programs.tmux = {
+    enable = true;
+  };
   
 }
