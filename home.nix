@@ -37,17 +37,12 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
     aerc
-    android-studio
     android-tools
     audacity
     cargo-flamegraph
     corrscope
-    dig
-    ente-auth
-    evcxr
     ffmpeg
     firefox-bin
-    flutter
     furnace
     fzf
     ghostty
@@ -75,7 +70,6 @@
     python3
     qbittorrent
     qpwgraph
-    ryubing
     sshpass
     steam
     thunderbird
