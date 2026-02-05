@@ -271,6 +271,7 @@
     kdePackages.yakuake
     lshw
     lutris
+    mako
     mixxx
     mpv
     neovim
