@@ -47,6 +47,7 @@
     fzf
     ghostty
     gitkraken
+    godot-mono
     google-chrome
     hyfetch
     hyperfine
