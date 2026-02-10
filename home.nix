@@ -41,6 +41,7 @@
     audacity
     cargo-flamegraph
     corrscope
+    cura-appimage
     ffmpeg
     firefox-bin
     furnace
