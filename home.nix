@@ -38,6 +38,7 @@
     # '')
     aerc
     android-tools
+    anki-bin
     audacity
     cargo-flamegraph
     corrscope
