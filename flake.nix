@@ -13,9 +13,10 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, nix-flatpak, nix-index-database, ... }@inputs:
+  outputs = { self, nixpkgs, nixos-hardware, nix-flatpak, nix-index-database, nix-cachyos-kernel, ... }@inputs:
     let 
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -25,6 +26,9 @@
             "ventoy-1.1.05"
           ];
         };
+        overlays = [
+          nix-cachyos-kernel.overlays.pinned
+        ];
       };
     in {
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {

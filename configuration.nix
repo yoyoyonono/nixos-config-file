@@ -18,6 +18,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
   boot.kernelModules = [ 
     "i2c-dev" 
     "i2c-piix4" 
