@@ -285,6 +285,7 @@
     kdePackages.qtstyleplugin-kvantum
     kdePackages.spectacle
     kdePackages.yakuake
+    lilypond-with-fonts
     lshw
     lutris
     mako
