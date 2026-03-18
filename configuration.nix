@@ -97,6 +97,8 @@
       environment.plasma6.excludePackages = with pkgs.kdePackages; [
         discover
       ];
+
+      environment.systemPackages = with pkgs; lib.mkAfter [libsForQt5.qtstyleplugin-kvantum];
       
     };
 
@@ -242,10 +244,19 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     (texlive.combined.scheme-full.__overrideTeXConfig{withDocs = true;})
+    (kde-rounded-corners.overrideAttrs (oldAttrs: {
+      src = pkgs.fetchFromGitHub {
+        owner = "matinlotfali";
+        repo = "KDE-Rounded-Corners";
+        rev = "2cf9329b31b3152e5513f7069c4bb11c765fdc6e";
+        sha256 = "sha256-mVoLCnpWHC2qDouO97n2cmxiewLCokjnWl1I9tnkIN4=";
+      };
+    }))
     alsa-scarlett-gui
     alsa-utils
     clang
     cmake
+    darkman
     feh
     file
     fuse
@@ -257,6 +268,7 @@
     htop
     hunspell
     hunspellDicts.en_US
+    inputs.kwin-effects-glass.packages.${pkgs.system}.default
     inxi
     kdePackages.ark
     kdePackages.baloo-widgets
@@ -270,6 +282,7 @@
     kdePackages.kwallet
     kdePackages.kwalletmanager
     kdePackages.okular
+    kdePackages.qtstyleplugin-kvantum
     kdePackages.spectacle
     kdePackages.yakuake
     lshw

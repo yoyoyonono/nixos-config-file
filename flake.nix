@@ -14,6 +14,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
+
+
+    kwin-effects-glass = {
+      url = "github:4v3ngR/kwin-effects-glass";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    
+
   };
 
   outputs = { self, nixpkgs, nixos-hardware, nix-flatpak, nix-index-database, nix-cachyos-kernel, ... }@inputs:
