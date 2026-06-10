@@ -112,6 +112,16 @@
       services.udisks2 = {
         enable = true;
       };
+
+      services.greetd = {
+        enable = true;
+        settings = {
+          default_session = {
+            command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd \"sway -V --unsupported-gpu\"";
+            user = "greeter"; 
+          };
+        };
+      };
     };
 
   };
@@ -298,6 +308,7 @@
     pulseaudioFull
     rclone
     rustup
+    tuigreet
     udiskie
     unrar-wrapper
     vim
