@@ -122,6 +122,7 @@
       xdg-desktop-portal-gtk
       kdePackages.xdg-desktop-portal-kde
     ];
+    config.common.default = "*";
   };
 
 
@@ -243,7 +244,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    (texlive.combined.scheme-full.__overrideTeXConfig{withDocs = true;})
+    (texlive.combined.scheme-full.overrideAttrs({withDocs = true;}))
     (kde-rounded-corners.overrideAttrs (oldAttrs: {
       src = pkgs.fetchFromGitHub {
         owner = "matinlotfali";
@@ -268,7 +269,7 @@
     htop
     hunspell
     hunspellDicts.en_US
-    inputs.kwin-effects-glass.packages.${pkgs.system}.default
+    inputs.kwin-effects-glass.packages.${pkgs.stdenv.hostPlatform.system}.default
     inxi
     kdePackages.ark
     kdePackages.baloo-widgets
@@ -304,7 +305,7 @@
     waybar
     wayshot
     wget
-    wineWowPackages.stable
+    wineWow64Packages.stable
     winetricks
     wmenu
     zoxide

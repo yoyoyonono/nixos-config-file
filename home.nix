@@ -217,6 +217,7 @@
         show_hidden = true;
       };
     };
+    shellWrapperName = "yy";
   };
 
   programs.nix-index = {
