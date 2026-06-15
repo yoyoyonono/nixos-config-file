@@ -41,6 +41,7 @@
     anki-bin
     audacity
     cargo-flamegraph
+    chirp
     cura-appimage
     ffmpeg
     firefox-bin
