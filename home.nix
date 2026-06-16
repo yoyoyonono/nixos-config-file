@@ -73,6 +73,7 @@
     python3
     qbittorrent
     qpwgraph
+    sdrpp
     sshpass
     steam
     thunderbird
