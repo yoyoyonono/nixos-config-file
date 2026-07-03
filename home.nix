@@ -139,6 +139,10 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  programs.swaylock = {
+    enable = true;
+  };
   
   programs.zsh = {
     enable = true;

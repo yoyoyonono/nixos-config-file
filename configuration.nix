@@ -60,6 +60,12 @@
 
   };
 
+  security.pam.services = {
+    login.u2fAuth = true;
+    sudo.u2fAuth = true;
+    swaylock.u2fAuth = true;
+    greetd.u2fAuth = true;
+  };
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -160,6 +166,7 @@
       openrgb-with-all-plugins
       platformio-core
       openocd
+      yubikey-personalization
     ];
   };
 
