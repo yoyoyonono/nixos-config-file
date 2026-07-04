@@ -86,6 +86,7 @@
     wireshark
     wl-clipboard
     yt-dlp
+    yubikey-manager
     zsh
     zsh-powerlevel10k
   ];
