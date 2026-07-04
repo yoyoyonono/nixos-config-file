@@ -161,15 +161,22 @@
     openFirewall = true;
   };
 
-  services = {
-    udev.packages = with pkgs; [
+  services.udev = {
+    packages = with pkgs; [
       openrgb-with-all-plugins
       platformio-core
       openocd
       yubikey-personalization
     ];
+    extraRules = ''
+       ACTION=="remove",\
+       ENV{ID_BUS}=="usb",\
+       ENV{ID_MODEL_ID}=="0407",\
+       ENV{ID_VENDOR_ID}=="1050",\
+       ENV{ID_VENDOR}=="Yubico",\
+       RUN+="${pkgs.systemd}/bin/loginctl lock-sessions"
+    '';
   };
-
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
