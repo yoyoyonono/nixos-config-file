@@ -74,6 +74,7 @@
     qbittorrent
     qpwgraph
     sdrpp
+    signal-desktop
     sshpass
     steam
     thunderbird
