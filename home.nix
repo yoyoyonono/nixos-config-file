@@ -141,7 +141,23 @@
   programs.home-manager.enable = true;
 
   programs.swaylock = {
+    package = pkgs.swaylock-effects;
     enable = true;
+    settings = {
+      screenshots = true;
+      clock = true;
+      indicator = true;
+      indicator-radius = 100;
+      indicator-thickness = 7;
+      effect-blur = "7x5";
+      effect-vignette = "0.5:0.5";
+      ring-color = "bb00cc";
+      key-hl-color = "880033";
+      inside-color = "00000088";
+      separator-color = "00000000";
+      fade-in = "0.2";
+      font = "Noto Sans";
+    };
   };
   
   programs.zsh = {
