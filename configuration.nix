@@ -112,6 +112,8 @@
       ];
 
       environment.systemPackages = with pkgs; lib.mkAfter [libsForQt5.qtstyleplugin-kvantum];
+
+      security.pam.services.kde.u2fAuth = true;  
       
     };
 
