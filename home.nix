@@ -40,6 +40,7 @@
     android-tools
     anki-bin
     audacity
+    browsh
     cargo-flamegraph
     chirp
     cura-appimage
