@@ -10,10 +10,12 @@
       ./hardware-configuration.nix
     ];
 
+  zramSwap.enable = true;
   swapDevices = [{
     device = "/swapfile";
     size = 8 * 1024; 
   }];
+  systemd.oomd.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
