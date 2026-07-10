@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -102,10 +102,7 @@
     # ".screenrc".source = dotfiles/screenrc;
 
     ".vim_runtime/" = {
-      source =  builtins.fetchGit {
-        url = "https://github.com/amix/vimrc";
-        rev = "46294d589d15d2e7308cf76c58f2df49bbec31e8";
-      };
+      source = inputs.vim_runtime;
       recursive = true;
     };
 

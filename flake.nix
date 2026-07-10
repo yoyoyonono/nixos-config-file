@@ -3,31 +3,38 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    
     nixos-hardware = {
       url = "github:NixOS/nixos-hardware/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+   
     nix-flatpak.url = "github:gmodena/nix-flatpak";
+   
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+   
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
-
-
+   
     kwin-effects-glass = {
       url = "github:4v3ngR/kwin-effects-glass";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
-
+    vim_runtime = {
+      url = "github:amix/vimrc/";
+      flake = false;
+    };
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, nix-flatpak, nix-index-database, nix-cachyos-kernel, ... }@inputs:
+  outputs = { self, nixpkgs, nixos-hardware, nix-flatpak, nix-index-database, nix-cachyos-kernel, vim_runtime, ... }@inputs:
     let 
       system = "x86_64-linux";
       pkgs = import nixpkgs {
