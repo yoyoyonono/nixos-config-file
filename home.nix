@@ -91,6 +91,22 @@
     yubikey-manager
     zsh
     zsh-powerlevel10k
+    (pkgs.writeShellScriptBin "gmuvpn" ''
+        set -euo pipefail
+
+        source "$HOME/.config/gmuvpn/env"
+
+        printf "Touch your YubiKey...\n" >&2
+        IFS= read -r OTP
+
+        printf "%s\n" "$VPN_PASS,$OTP" |
+          exec sudo openconnect \
+            vpn.gmu.edu \
+            --user="$VPN_USER" \
+            --authgroup=STUDENT \
+            --passwd-on-stdin
+      ''
+    )
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
