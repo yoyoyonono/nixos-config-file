@@ -77,7 +77,7 @@
   };
 
   # Set your time zone.
-  time.timeZone = "America/New_York";
+  time.timeZone = "Asia/Hong_Kong";
   time.hardwareClockInLocalTime = true;
 
   # Select internationalisation properties.
