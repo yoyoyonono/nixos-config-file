@@ -77,7 +77,7 @@
   };
 
   # Set your time zone.
-  time.timeZone = "Asia/Hong_Kong";
+  time.timeZone = "Asia/Kathmandu";
   time.hardwareClockInLocalTime = true;
 
   # Select internationalisation properties.
