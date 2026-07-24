@@ -62,6 +62,7 @@
     kicad
     krita
     libreoffice-qt6
+    lmms
     mangohud
     mpvpaper
     nh
