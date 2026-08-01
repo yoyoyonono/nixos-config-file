@@ -376,6 +376,8 @@
     enable = true;
   };
 
+  programs.mosh.enable = true;
+
   services.samba = {
     enable = true;
     openFirewall = true;
