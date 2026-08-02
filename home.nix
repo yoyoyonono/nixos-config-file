@@ -50,6 +50,7 @@
     fzf
     ghostty
     gitkraken
+    gnome-network-displays
     godot-mono
     google-chrome
     hyfetch
