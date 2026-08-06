@@ -281,8 +281,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    (texlive.combined.scheme-full.overrideAttrs({withDocs = true;}))
-    kde-rounded-corners
     alsa-scarlett-gui
     alsa-utils
     clang
@@ -301,6 +299,7 @@
     hunspellDicts.en_US
     inputs.kwin-effects-glass.packages.${pkgs.stdenv.hostPlatform.system}.default
     inxi
+    kde-rounded-corners
     kdePackages.ark
     kdePackages.baloo-widgets
     kdePackages.dolphin
@@ -328,6 +327,7 @@
     pulseaudioFull
     rclone
     rustup
+    texliveFullWithDocs
     tuigreet
     udiskie
     unrar-wrapper
