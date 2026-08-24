@@ -82,7 +82,6 @@
     steam
     thunderbird
     traceroute
-    transgui
     usbutils
     vesktop
     weechat
