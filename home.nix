@@ -76,6 +76,7 @@
     python3
     qbittorrent
     qpwgraph
+    rpi-imager
     sdrpp
     signal-desktop
     sshpass
