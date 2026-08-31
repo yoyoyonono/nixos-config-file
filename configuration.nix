@@ -423,6 +423,7 @@
     445
   ];
   networking.firewall.allowedUDPPorts = [ 
+    53
     67
     51820
   ];
