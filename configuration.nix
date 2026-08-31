@@ -423,6 +423,7 @@
     445
   ];
   networking.firewall.allowedUDPPorts = [ 
+    67
     51820
   ];
   networking.firewall.checkReversePath = false; 
