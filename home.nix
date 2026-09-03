@@ -40,6 +40,7 @@
     android-tools
     anki-bin
     audacity
+    bluetui
     browsh
     cargo-flamegraph
     chirp
@@ -87,6 +88,7 @@
     vesktop
     weechat
     winbox
+    wiremix
     wireshark
     wl-clipboard
     yt-dlp
