@@ -42,6 +42,7 @@
     audacity
     bluetui
     browsh
+    bsdgames
     cargo-flamegraph
     chirp
     cura-appimage
