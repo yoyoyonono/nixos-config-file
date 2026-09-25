@@ -75,6 +75,7 @@
     osu-lazer-bin
     parsec-bin
     prismlauncher
+    poppler-utils
     python3
     qbittorrent
     qpwgraph
