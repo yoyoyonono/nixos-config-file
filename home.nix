@@ -80,7 +80,6 @@
     qbittorrent
     qpwgraph
     rpi-imager
-    sdrpp
     signal-desktop
     sshpass
     steam
