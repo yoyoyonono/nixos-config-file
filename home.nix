@@ -52,6 +52,7 @@
     fzf
     ghostty
     gitkraken
+    glances
     gnome-network-displays
     godot-mono
     google-chrome
