@@ -345,6 +345,7 @@
   fonts = {
     packages = with pkgs; [
       corefonts
+      font-awesome
       google-fonts 
       ipafont
       kochi-substitute
