@@ -93,6 +93,7 @@
     wiremix
     wireshark
     wl-clipboard
+    wpsoffice
     yt-dlp
     yubikey-manager
     zsh
