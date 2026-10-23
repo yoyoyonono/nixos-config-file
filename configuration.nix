@@ -139,6 +139,10 @@
           };
         };
       };
+
+      environment.systemPackages = with pkgs; [
+        mako
+      ];
     };
 
   };
@@ -258,7 +262,6 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.yoyo = {
     isNormalUser = true;
-    description = "エリナ";
     extraGroups = [ "networkmanager" "wheel" "dialout" "syncthing" "plugdev" "libvirtd"];
     packages = with pkgs; [
     #  thunderbird
@@ -318,7 +321,6 @@
     lilypond-with-fonts
     lshw
     lutris
-    mako
     mixxx
     mpv
     neovim
