@@ -54,7 +54,7 @@
     gitkraken
     glances
     gnome-network-displays
-    godot-mono
+    godot
     google-chrome
     hyfetch
     hyperfine

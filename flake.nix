@@ -54,7 +54,7 @@
           modules = [ 
             ./configuration.nix
             inputs.home-manager.nixosModules.default
-            nixos-hardware.nixosModules.asus-zephyrus-ga401
+            nixos-hardware.nixosModules.asus-zephyrus-ga401iv
             nix-flatpak.nixosModules.nix-flatpak
 
             {
