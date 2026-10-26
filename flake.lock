@@ -208,7 +208,8 @@
         "nix-index-database": "nix-index-database",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_2",
-        "vim_runtime": "vim_runtime"
+        "vim_runtime": "vim_runtime",
+        "wps-symbol-fonts": "wps-symbol-fonts"
       }
     },
     "systems": {
@@ -257,6 +258,22 @@
       "original": {
         "owner": "amix",
         "repo": "vimrc",
+        "type": "github"
+      }
+    },
+    "wps-symbol-fonts": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1721705244,
+        "narHash": "sha256-b0Qf1HbQzy2FSd7CJnPAaNpJ0VJT88trMaXuAkXX/OE=",
+        "owner": "jayknoxqu",
+        "repo": "wps-symbol-fonts",
+        "rev": "7e7a18a51efcfc86a00cf2573a3896eb28fe4a37",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jayknoxqu",
+        "repo": "wps-symbol-fonts",
         "type": "github"
       }
     }

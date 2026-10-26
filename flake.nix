@@ -32,9 +32,14 @@
       url = "github:amix/vimrc/";
       flake = false;
     };
+
+    wps-symbol-fonts = {
+      url = "github:jayknoxqu/wps-symbol-fonts";
+      flake = false;
+    };
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, nix-flatpak, nix-index-database, nix-cachyos-kernel, vim_runtime, ... }@inputs:
+  outputs = { self, nixpkgs, nixos-hardware, nix-flatpak, nix-index-database, nix-cachyos-kernel, vim_runtime, wps-symbol-fonts, ... }@inputs:
     let 
       system = "x86_64-linux";
       pkgs = import nixpkgs {

@@ -352,6 +352,17 @@
       ipafont
       kochi-substitute
       vista-fonts
+      (pkgs.stdenvNoCC.mkDerivation {
+        pname = "wps-symbol-fonts";
+        version = "unstable";
+        src = inputs.wps-symbol-fonts;
+        installPhase = ''
+          runHook preInstall
+          install -Dm444 -t $out/share/fonts/truetype \
+            symbol.ttf wingding.ttf wingdn2.ttf wingdn3.ttf mtextra.ttf
+          runHook postInstall
+        '';
+      })
     ] ++ (builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts));
   };
 
