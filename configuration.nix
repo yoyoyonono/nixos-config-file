@@ -37,9 +37,7 @@
     experimental-features = [ "nix-command" "flakes" ];
     substituters = [
       "https://aseipp-nix-cache.freetls.fastly.net"
-      "https://attic.xuyh0120.win/lantian"
     ];
-    trusted-public-keys = [ "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc=" ];
   };
 
 
